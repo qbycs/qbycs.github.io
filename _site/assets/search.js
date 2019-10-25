@@ -1,0 +1,1 @@
+window.TEXT_SEARCH_DATA={'posts':[{'title':"Welcome",'url':"/2018/07/01/welcome.html"},{'title':"Windows电脑使用技巧",'url':"/2019/10/19/skills-of-windows-computer.html"},{'title':"根据照片和轨迹提取采集号经纬度流程",'url':"/2019/10/20/longitude-and-latitude-for-images.html"}]};
