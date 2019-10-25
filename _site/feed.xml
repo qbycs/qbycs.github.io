@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-Hans"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh-Hans" /><updated>2019-10-25T15:56:56+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">张振的博客</title><subtitle>可以多日不努力，不能一晚少睡眠。
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" xml:lang="zh-Hans"><generator uri="https://jekyllrb.com/" version="3.8.5">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" hreflang="zh-Hans" /><updated>2019-10-25T16:48:45+08:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">张振的博客</title><subtitle>可以多日不努力，不能一晚少睡眠。
 </subtitle><author><name>张振</name><email>zhang_zhen@tongji.edu.cn</email></author><entry><title type="html">根据照片和轨迹提取采集号经纬度流程</title><link href="http://localhost:4000/2019/10/20/longitude-and-latitude-for-images.html" rel="alternate" type="text/html" title="根据照片和轨迹提取采集号经纬度流程" /><published>2019-10-20T00:00:00+08:00</published><updated>2019-10-20T00:00:00+08:00</updated><id>http://localhost:4000/2019/10/20/longitude-and-latitude-for-images</id><content type="html" xml:base="http://localhost:4000/2019/10/20/longitude-and-latitude-for-images.html">&lt;!--more--&gt;
 
 &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;准备工作：每日野外考察工作开始前，根据手机时间校对相机时间。
@@ -38,19 +38,20 @@
       &lt;/li&gt;
     &lt;/ol&gt;
   &lt;/li&gt;
-  &lt;li&gt;使用记事本打开doc.kml文件，删除文件头和尾，仅剩下每张图片的位置描述，每个照片均有10行的描述说明（包括空行1行）
-```&lt;/li&gt;
+  &lt;li&gt;使用记事本打开doc.kml文件，删除文件头和尾，仅剩下每张图片的位置描述，每个照片均有10行的描述说明（包括空行1行）&lt;/li&gt;
 &lt;/ul&gt;
-&lt;Placemark&gt;
-&lt;name&gt;IMG_1674.JPG&lt;/name&gt;
-&lt;description&gt;&amp;lt;![CDATA[&lt;img src=&quot;img_1674.jpg&quot; width=&quot;600&quot; height=&quot;400&quot; /&gt;]]&amp;gt;
-&lt;/description&gt;
-&lt;styleUrl&gt;#defaultStyle1&lt;/styleUrl&gt;&lt;style&gt;&lt;IconStyle&gt;&lt;Icon&gt;&lt;href&gt;thumbs/thumb_IMG_1674.JPG&lt;/href&gt;&lt;/Icon&gt;&lt;/IconStyle&gt;&lt;/style&gt;
-&lt;Point&gt;
-&lt;coordinates&gt;117.4579892,30.0474718,1726.3&lt;/coordinates&gt;
-&lt;/Point&gt;
-&lt;/Placemark&gt;
-&lt;p&gt;```&lt;/p&gt;
+
+&lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;Placemark&amp;gt;
+&amp;lt;name&amp;gt;IMG_1674.JPG&amp;lt;/name&amp;gt;
+&amp;lt;description&amp;gt;&amp;lt;![CDATA[&amp;lt;img src='img_1674.jpg' width='600' height='400'/&amp;gt;]]&amp;gt;
+&amp;lt;/description&amp;gt;
+&amp;lt;styleUrl&amp;gt;#defaultStyle1&amp;lt;/styleUrl&amp;gt;&amp;lt;Style&amp;gt;&amp;lt;IconStyle&amp;gt;&amp;lt;Icon&amp;gt;&amp;lt;href&amp;gt;thumbs/thumb_IMG_1674.JPG&amp;lt;/href&amp;gt;&amp;lt;/Icon&amp;gt;&amp;lt;/IconStyle&amp;gt;&amp;lt;/Style&amp;gt;
+&amp;lt;Point&amp;gt;
+&amp;lt;coordinates&amp;gt;117.4579892,30.0474718,1726.3&amp;lt;/coordinates&amp;gt;
+&amp;lt;/Point&amp;gt;
+&amp;lt;/Placemark&amp;gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;ul&gt;
   &lt;li&gt;需从上述文件中，批量提出第二行的文件名和第7行的经纬度信息。&lt;/li&gt;
   &lt;li&gt;方法如下，将上述描述块粘贴入word中，使用文字转表格功能，列宽为10即可，然后见所需列粘贴入excel中，删除&lt;name&gt;...&lt;/name&gt;,&lt;coordinates&gt;...&lt;/coordinates&gt;字段。
@@ -58,7 +59,14 @@
     &lt;p&gt;每个采集号常包含多张照片，此处仅保留每个采集号的首张照片，即可获得每个采集号的采集信息。
 处理方式如下：&lt;/p&gt;
   &lt;/li&gt;
-  &lt;li&gt;将每张照片的名字中的采集号进行分列提取，会得到一个仅含采集号的列，对该列使用Countif函数（=countif（$A$1：A1=A1)）进行计数，所有返回值大于1的行全部删除即可。&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;将每张照片的名字中的采集号进行分列提取，会得到一个仅含采集号的列，对该列使用Countif函数：&lt;/p&gt;
+
+    &lt;div class=&quot;highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;(=countif($A$1：A1=A1))
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+
+    &lt;p&gt;进行计数，所有返回值大于1的行全部删除即可。&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;</content><author><name>张振</name><email>zhang_zhen@tongji.edu.cn</email></author><category term="电脑知识" /><summary type="html"></summary></entry><entry><title type="html">Windows电脑使用技巧</title><link href="http://localhost:4000/2019/10/19/skills-of-windows-computer.html" rel="alternate" type="text/html" title="Windows电脑使用技巧" /><published>2019-10-19T00:00:00+08:00</published><updated>2019-10-19T00:00:00+08:00</updated><id>http://localhost:4000/2019/10/19/skills-of-windows-computer</id><content type="html" xml:base="http://localhost:4000/2019/10/19/skills-of-windows-computer.html">&lt;!--more--&gt;
 &lt;h2 id=&quot;1-电脑软件推荐&quot;&gt;1. 电脑软件推荐&lt;/h2&gt;
 

@@ -339,19 +339,20 @@
       </li>
     </ol>
   </li>
-  <li>使用记事本打开doc.kml文件，删除文件头和尾，仅剩下每张图片的位置描述，每个照片均有10行的描述说明（包括空行1行）
-```</li>
+  <li>使用记事本打开doc.kml文件，删除文件头和尾，仅剩下每张图片的位置描述，每个照片均有10行的描述说明（包括空行1行）</li>
 </ul>
-<Placemark>
-<name>IMG_1674.JPG</name>
-<description>&lt;![CDATA[<img src="img_1674.jpg" width="600" height="400" />]]&gt;
-</description>
-<styleUrl>#defaultStyle1</styleUrl><style><IconStyle><Icon><href>thumbs/thumb_IMG_1674.JPG</href></Icon></IconStyle></style>
-<Point>
-<coordinates>117.4579892,30.0474718,1726.3</coordinates>
-</Point>
-</Placemark>
-<p>```</p>
+
+<div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;Placemark&gt;
+&lt;name&gt;IMG_1674.JPG&lt;/name&gt;
+&lt;description&gt;&lt;![CDATA[&lt;img src='img_1674.jpg' width='600' height='400'/&gt;]]&gt;
+&lt;/description&gt;
+&lt;styleUrl&gt;#defaultStyle1&lt;/styleUrl&gt;&lt;Style&gt;&lt;IconStyle&gt;&lt;Icon&gt;&lt;href&gt;thumbs/thumb_IMG_1674.JPG&lt;/href&gt;&lt;/Icon&gt;&lt;/IconStyle&gt;&lt;/Style&gt;
+&lt;Point&gt;
+&lt;coordinates&gt;117.4579892,30.0474718,1726.3&lt;/coordinates&gt;
+&lt;/Point&gt;
+&lt;/Placemark&gt;
+</code></pre></div></div>
+
 <ul>
   <li>需从上述文件中，批量提出第二行的文件名和第7行的经纬度信息。</li>
   <li>方法如下，将上述描述块粘贴入word中，使用文字转表格功能，列宽为10即可，然后见所需列粘贴入excel中，删除<name>...</name>,<coordinates>...</coordinates>字段。
@@ -359,7 +360,14 @@
     <p>每个采集号常包含多张照片，此处仅保留每个采集号的首张照片，即可获得每个采集号的采集信息。
 处理方式如下：</p>
   </li>
-  <li>将每张照片的名字中的采集号进行分列提取，会得到一个仅含采集号的列，对该列使用Countif函数（=countif（$A$1：A1=A1)）进行计数，所有返回值大于1的行全部删除即可。</li>
+  <li>
+    <p>将每张照片的名字中的采集号进行分列提取，会得到一个仅含采集号的列，对该列使用Countif函数：</p>
+
+    <div class="highlighter-rouge"><div class="highlight"><pre class="highlight"><code>(=countif($A$1：A1=A1))
+</code></pre></div>    </div>
+
+    <p>进行计数，所有返回值大于1的行全部删除即可。</p>
+  </li>
 </ul>
 </div><section class="article__sharing d-print-none"></section><div class="d-print-none"><footer class="article__footer"><meta itemprop="dateModified" content="2019-10-20T00:00:00+08:00"><!-- start custom article footer snippet -->
 
