@@ -37,5 +37,5 @@ permalink: /home/personal-information
 
 - Lu, Z. L.*, **Zhang, Z.***, Zhou, Q. M., Lu J., Tian, H. Z. & Li, H. Q. 2017. Molecular analyses of *Ficus erecta* and its allies within the subsection *Frutescentiae* (Moraceae). Plant Systematics and Evolution. 303(5): 603-614. (* 共同一作) [点击查看](https://www.researchgate.net/publication/314263261)
 
-- 李德铢 2018. 中国维管植物科属词典. 北京: 科学出版社. (参编)
+- 李德铢 2018. 中国维管植物科属词典. 北京: 科学出版社. (参编) [点击查看](http://vpfg.sciencereading.cn/keshu/f)
 
