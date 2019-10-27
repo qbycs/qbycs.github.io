@@ -185,6 +185,7 @@ package-lock.json
 # jekyll
 Gemfile.lock
 package-lock.json
+.site/
 .sass-cache/
 .jekyll-metadata
 .jekyll-cache/
