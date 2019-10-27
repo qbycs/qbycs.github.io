@@ -17,13 +17,11 @@
       .googlepluse-button {
         @include clickable($text-color-1, $google-plus-color);
       }
-
-      .researchgate-button {
-        @include clickable($text-color-1, $researchgate-color);
-      }
-
       .telegram-button {
         @include clickable($text-color-1, $telegram-color);
+      }
+      .researchgate-button {
+        @include clickable($text-color-1, $researchgate-color);
       }
       .medium-button {
         @include clickable($text-color-1, $medium-color);

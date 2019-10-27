@@ -3728,6 +3728,38 @@ a > .item__header, a.item__header, .item__header > a {
       background-color: #32afed !important; }
       .author-links > ul > li > .telegram-button.disabled svg path, .author-links > ul > li > .telegram-button:disabled svg path {
         fill: rgba(255, 255, 255, 0.2) !important; }
+  .author-links > ul > li > .researchgate-button {
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+    .author-links > ul > li > .researchgate-button svg path {
+      -webkit-transition: all 0.2s ease-in-out;
+      transition: all 0.2s ease-in-out; }
+    .author-links > ul > li > .researchgate-button, .author-links > ul > li > .researchgate-button:link, .author-links > ul > li > .researchgate-button:visited {
+      color: #fff;
+      background-color: #b7a017; }
+      .author-links > ul > li > .researchgate-button svg path, .author-links > ul > li > .researchgate-button:link svg path, .author-links > ul > li > .researchgate-button:visited svg path {
+        fill: #fff; }
+    .root[data-is-touch="false"] .author-links > ul > li > .researchgate-button:hover {
+      color: #fff;
+      background-color: #78690f; }
+      .root[data-is-touch="false"] .author-links > ul > li > .researchgate-button:hover svg path {
+        fill: #fff; }
+    .root[data-is-touch] .author-links > ul > li > .researchgate-button.active, .root[data-is-touch] .author-links > ul > li > .researchgate-button:active {
+      color: #fff;
+      background-color: #342d06; }
+      .root[data-is-touch] .author-links > ul > li > .researchgate-button.active svg path, .root[data-is-touch] .author-links > ul > li > .researchgate-button:active svg path {
+        fill: #fff; }
+    .root[data-is-touch] .author-links > ul > li > .researchgate-button.focus {
+      color: default;
+      background-color: #78690f;
+      box-shadow: 0 0 0 2px rgba(120, 105, 15, 0.4); }
+      .root[data-is-touch] .author-links > ul > li > .researchgate-button.focus svg path {
+        fill: default; }
+    .author-links > ul > li > .researchgate-button.disabled, .author-links > ul > li > .researchgate-button:disabled {
+      color: rgba(255, 255, 255, 0.2) !important;
+      background-color: #b7a017 !important; }
+      .author-links > ul > li > .researchgate-button.disabled svg path, .author-links > ul > li > .researchgate-button:disabled svg path {
+        fill: rgba(255, 255, 255, 0.2) !important; }
   .author-links > ul > li > .medium-button {
     -webkit-transition: all 0.2s ease-in-out;
     transition: all 0.2s ease-in-out; }
