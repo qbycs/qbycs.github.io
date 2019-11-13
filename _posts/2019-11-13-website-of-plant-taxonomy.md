@@ -5,7 +5,6 @@ tags: 植物分类
 key: website-of-plant-taxonomy
 ---
 
-# 植物分类学网站推荐
 
 本文章意在列举一些植物分类学研究过程中常用的互联网在线资源。
 
