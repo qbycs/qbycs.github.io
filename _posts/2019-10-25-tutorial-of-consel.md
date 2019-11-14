@@ -5,9 +5,13 @@ tags: 系统发育
 key: tutorial-of-consel
 ---
 
+介绍Consel系统发育检测软件的使用教程。 
+
+<!--more-->
+
 ## 1. 简介
 
-​	系统发育是一种历史教程，任何基于分子数据集得到的发育树都是对真实系统发生的推测。一个合理地假设，总是应该接收来自各种证据的检验。
+​	系统发育是一种历史过程，任何基于分子数据集得到的发育树都是对真实系统发生的推测。一个合理地假设，总是应该接收来自各种证据的检验。
 
 ​	系统发育假设检验（phylogenetic hypothesis testing）是用**统计学方法检验两个或多个不同发育树的差异是否有统计学上的显著性**。系统发育检验需要数据集、模型、两棵以上的发育树。已有有大量的检验方法，主要包括频率检验或者贝叶斯检验。一般来说，检验方法包括Approximately unbiased test，Approximate Bayesian posterior probability test，bootstrap probability test，Kishino-Hasegawa test，weighted Kishino-Hasegawa test，Shimodaira-Hasegawa test和weighted Shimodaira-Hasegawa test等。常用的为**Approximately unbiased test (AU)和Kishino-Hasegawa test (KH)**。
 <!--more-->
