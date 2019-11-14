@@ -100,3 +100,7 @@ key: website-of-plant-taxonomy
 - [The History of Taxonomy]( http://www.bihrmann.com/caudiciforms/div/default.asp ) 公元前2650年到2003年间的全球范围内的植物分类分类学家简史
 - [多识植物百科](http://duocet.ibiodiversity.net) 致力于做中文世界里最权威的植物百科全书
 - [植物分类词典]( https://zhiwufenlei.18dao.cn/ ) 个人创建的中国植物类群列表
+
+
+
+--- 未完待续 ---
