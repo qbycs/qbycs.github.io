@@ -53,5 +53,4 @@ key: skills-of-windows-computer
 1. 软件安装应该尽量不要安装在系统盘，一般都可以在安装过程中直接修改，将程序默认安装路径中的C盘为D盘即可。
 
 
-
---- 未完待续 ---
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/fengexian.jpg){:height="175.57" width="850"}
