@@ -23,11 +23,11 @@ key: simple-tutorial-of-phylogeny
 
 1.  打开Mega， 调出Align模块> edit/build Alignment > creat a new alignment >  选择DNA，出现Alignment explorer。所有的比对编辑操作均在这里面实现。界面如下：
 
-    ![](alignment explorer.png)
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/alignment%20explorer.png)
 
 2.  通过edit导入新序列，edit> edit sequences form file 
 
-    ![](insert sequence form file.png)
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/insert%20sequence%20form%20file.png)
 
     此处的file需要特定的格式，如常见的fasta（.fas）格式。格式如下：
 
@@ -45,27 +45,27 @@ key: simple-tutorial-of-phylogeny
 
 3. 序列导入以后即可比对，比对前界面如下：
 
-    ![](before alignment.png)
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/before%20alignment.png)
 
     然后 Muscle > Align DNA (如为编码序列，可截取完ORF以后，选择Align Codons)，选择默认设置，点击compute即可。比对参数界面：
 
-    ![](align compute.png)
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/align%20compute.png)
 
     比对后则如下：
 
-    ![](after alignment.png)
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/after%20alignment.png)
 
     >  注：当序列明显无法比对整齐时，可检查是否为反向互补序列。
 
     比对后的序列两段常常不整齐，此比对导致的gap（即-）会部分影响发育树结果，两段大部分截取删除后，少部分gap可用‘‘?’’填充整齐。
 
-    ![](alignment trim.png)
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/alignment%20trim.png)
 
 4.  按需保存和导出比对结果。
 
     比对结果的保存优先使用fasta格式，而一般发育树构建软件通常使用nexus格式作为输入文件。Mega支持这两种格式的输出。
 
-    ![](export of alignment.png)
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/export%20of%20alignment.png)
 
 ### 2.2 碱基替换模型选择
 
@@ -90,19 +90,19 @@ key: simple-tutorial-of-phylogeny
 
 1. 输入文件需要nexus (*.nex)格式，该格式可以由Mega比对完成后生成。首先用PAUP软件读取nexus格式文件。打开PAUP > 选择nexus文件。
 
-   ![](open nexus.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/open%20nexus.png)
 
    
 
 2. 运行模型计算批处理文件。PAUP中 File > open > mrblock.dat 运行自动进行，生成mrmodel.scores文件，该文件通常和mrblock.dat,modelGUI.exe一同位于MrMTGUI文件夹下。
 
-   ![](mrblock complete.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/mrblock%20complete.png)
 
    Mrblock.dat会对24个模型分别计算其得分，得分记录于mrmodel.scores中。
 
 3. 最优模型评价。打开ModelGUI.exe  > 点击右侧select file... > 选择mrmodel.scores文件 > 点击右侧MrModeltest!!!。界面如下：
 
-   ![](model optimal.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/model%20optimal.png)
 
    不同模型间的比较评价遵循特定的标准，如hLRTs，AIC，AICc，BIC，BF等等。MrModeltest仅支持前两种评价标准，通常选用AIC标准。结果重点解读最优模型及其参数，自动生成的ML，BI的命令模块。
 
@@ -159,21 +159,21 @@ MrModeltest仅在24个模型中选择，Modeltest也不过是48个，这可能�
 
 1. 打开jModeltest，File > Load DNA alignment, 输入数据，此处使用fasta格式。
 
-   ![](jmodeltest import.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20import.png)
 
 2. 计算模型得分。Analysis > compute likelihood scores > compute likelihood（选择默认参数，如有需要可自行修改），等待计算完成。
 
-   ![](jmodeltest likelihood settings.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20likelihood%20settings.png)
 
-   ![](jmodeltest progress.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20progress.png)
 
 3. 模型评价。jModeltest支持多种方法评价模型，一般来说BIC优于AIC，然而AIC更为常用。jModeltest 的结果可以保存到HTML格式使用浏览器查看。
 
-   ![](jmodeltest model compare.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20model%20compare.png)
 
    结果可以在result > show results table 中查看，红色标记的即为最优模型。
 
-   ![](jmodeltest optimal model.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20optimal%20model.png)
 
 #### 2.2.3 形态数据的模型选择
 
@@ -221,7 +221,7 @@ MrModeltest仅在24个模型中选择，Modeltest也不过是48个，这可能�
 
 2. PAUP直接打开保存好的nexus文件，就可直接运算。当bootstrap replicates达到预置的重复数时，程序结束。生成log文件和tre文件。
 
-   ![](paup compute.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/paup%20compute.png)
 
 3. 在此，我们涉及到两个概念，nexus文件和外类群，我们对它稍做解释。
 
@@ -448,23 +448,23 @@ MrModeltest仅在24个模型中选择，Modeltest也不过是48个，这可能�
 
 1. 运行RXaML-master。其没有用户界面，需要在cmd（命令提示符）运行。拷贝程序至C盘，打开执行文件（*.exe）所在文件夹.
 
-   ![](rxaml folder.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/rxaml%20folder.png)
 
 2. 拷贝比对好的fasta文件至该文件夹下。
 
-   ![](rxaml addfasta.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/rxaml%20addfasta.png)
 
 3. 打开cmd（命令提示符）程序。输入**cd fasta文件所在路径**，然后回车。cd此处意为change directory。
 
-   ![](rxaml changedir.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/rxaml%20changedir.png)
 
 4. 输入程序参数，回车后即开始运行，结果在同一文件夹下。此处先示例，然后再介绍常用参数。
 
-   ![](rxaml para.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/rxaml%20para.png)
 
-   ![](rxaml run.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/rxaml%20run.png)
 
-   ![](rxaml result.png)
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/rxaml%20result.png)
 
 5. 结果会生成多个.tre文件，选择bipartion.tre即可在各种可视化工具中调整美化。
 
@@ -647,11 +647,11 @@ mcmcp ngen=15000000 samplefreq=1000 nruns=4 checkpoint=yes checkfreq = 10000 sto
 
 Mrbayes免安装，没有图形化界面，所有操作均通过输入操作命令行进行，主界面如下：
 
-![](MrBayes surface.png)
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/MrBayes%20surface.png)
 
 如果选择在nexus文件中已经准备好了详尽的Mrbayes Block，此时就可以直接输入**exe name.nex**，回车后即可等待运行结束，在当前文件夹下可见.tre格式的树文件。运行过程界面如下：
 
-![](Mrbayes running.png)
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/Mrbayes%20running.png)
 
 ## 4. 发育树的可视化
 
