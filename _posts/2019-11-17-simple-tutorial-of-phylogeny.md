@@ -595,7 +595,7 @@ end;
 - Prset：突变速率先验分布类型，Mrbayes中使用狄利克雷分布作为其先验；
 
   $$
-  Dir(\vec{p}|\vec{α})= {{Γ(\sum_{K=1}^Kα_k)} \over Π_{k=1}^KΓ(α_k)} {\displaystyle \prod_{k=1}^K}p_k^{α_k-1}= {1 \over Δ(\vec {α})}\displaystyle \prod_{k=1}^Kp_k^{α_k-1}
+  Dir(\vec{p}|\vec{α})= {Γ(\sum_{K=1}^Kα_k) \over Π_{k=1}^KΓ(α_k)} {\displaystyle \prod_{k=1}^K}p_k^{α_k-1}= {1 \over Δ(\vec {α})}\displaystyle \prod_{k=1}^Kp_k^{α_k-1}
   $$
 
 - mcmc：蒙特卡洛-马尔科夫链参数，包括若干重要子参数：
