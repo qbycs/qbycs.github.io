@@ -663,7 +663,7 @@ mcmcp ngen=15000000 samplefreq=1000 nruns=4 checkpoint=yes checkfreq = 10000 sto
 
 1. 继续提高代数，直至时间成本难以承受，或者代数增加到30000000-50000000代（约数，在该代数下，大部分数据集都应该完成收敛；
 
-2. Average standard deviation of split frequencies只是一种判断收敛的方法，对于MCMC算法的输出结果，ESS（ Effective Sample Size ）也是一个参见的判读收敛的方式，该方式可以在[Tracer]( http://beast.community/tracer )中实现。当代数已经足够大的时候，使用Tracer软件打开.p文件即可，如果所有的ESS都大于200时，即可认为运算已经收敛；![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/tracer.png){:.shadow}
+2. Average standard deviation of split frequencies只是一种判断收敛的方法，对于MCMC算法的输出结果，ESS（ Effective Sample Size ）也是一个参见的判读收敛的方式，该方式可以在[Tracer]( http://beast.community/tracer )中实现。当代数已经足够大的时候，使用Tracer软件打开.p文件即可，如果所有的ESS都大于200时，即可认为运算已经收敛；![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/tracer.png)
 
 3. 提高抽样频率：可在1000-10000之间选择，提高抽样频率可以加快收敛速度。同时最好加长运算链长，以保证最终有足够多的树用来总结树的拓扑结构和后验概率；
 
