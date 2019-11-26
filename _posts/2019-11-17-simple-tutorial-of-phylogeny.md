@@ -659,12 +659,26 @@ mcmcp ngen=15000000 samplefreq=1000 nruns=4 checkpoint=yes checkfreq = 10000 sto
 
  Mrbayes由于使用MCMC算法，与上述两个系统发育软件有所不同，会存在一个收敛问题。Mrbayes软件使用Average standard deviation of split frequencies来判断收敛，默认每5000代计算一次该参数，如果该参数小于0.01，软件运行到预设代数则会自动停止，如果没有就会提示是否需要继续增加代数！
 
-但是由于数据集的差别，即使增加到很大代数后，该参数仍然大于0.01，此时有以下集中方法可以尝试解决：
+但是由于数据集的差别，即使增加到很大代数后，该参数仍然大于0.01，此时有以下几种方法可以尝试解决：
 
-1. 继续提高代数，直至时间成本难以承受，或者代数增加到30000000-50000000代（约数，在该代数下，大部分数据集都应该完成收敛。
-2. Average standard deviation of split frequencies只是一种判断收敛的方法，对于MCMC算法的输出结果，ESS（ Effective Sample Size ）也是一个参见的判读收敛的方式，该方式可以在[Tracer]( http://beast.community/tracer )中实现。当代数已经足够大的时候，使用Tracer软件打开.p文件即可，如果所有的ESS都大于200时，即可认为运算已经收敛。![](  https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/tracer.png )
+1. 继续提高代数，直至时间成本难以承受，或者代数增加到30000000-50000000代（约数，在该代数下，大部分数据集都应该完成收敛；
 
+2. Average standard deviation of split frequencies只是一种判断收敛的方法，对于MCMC算法的输出结果，ESS（ Effective Sample Size ）也是一个参见的判读收敛的方式，该方式可以在[Tracer]( http://beast.community/tracer )中实现。当代数已经足够大的时候，使用Tracer软件打开.p文件即可，如果所有的ESS都大于200时，即可认为运算已经收敛；![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/tracer.png){:.shadow}
 
+3. 提高抽样频率：可在1000-10000之间选择，提高抽样频率可以加快收敛速度。同时最好加长运算链长，以保证最终有足够多的树用来总结树的拓扑结构和后验概率；
+
+4. 如果在Tracer中检查仍然没有收敛的趋势，就需要对运行参数进行调节了。可以调节的参数如下：
+
+   - temp参数：热链的温度，也就是热链冷链交换的频率，默认为0.1，可以稍微调高一些；
+   - Ngammacat：默认为4，可改为16，提交Gamma分布的离散化估计精细度，会明显提高运算强度；
+
+5. 指定一颗起始树：一般使用UPGMA树作为起始树，一颗合适的起始树可以避免由不恰当起始树造成的局部最优和收敛缓慢。起始树的格式如下：
+
+   ```
+   [begin trees;
+   tree usertree=(A:0.01,B:0.01,((C:0.01,D:0.01):0.01,E:0.01):0.01);
+   end;]
+   ```
 
 ## 4. 发育树的可视化
 
