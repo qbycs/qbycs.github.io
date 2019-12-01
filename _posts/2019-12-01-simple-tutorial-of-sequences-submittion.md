@@ -7,7 +7,8 @@ key: simple-tutorial-of-sequences-submittion
 
 本文是对如何向NCBI上传序列的详细介绍，不过本文完成时间较早，和最新的NCBI网页上传流程略有差别，不过应该影响不大！
 
-<!-- more -->
+<!--more-->
+
 
 ## 1. 序列及信息、注释文件准备
 
