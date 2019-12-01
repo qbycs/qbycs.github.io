@@ -5,6 +5,8 @@ tags: 系统发育
 key: simple-tutorial-of-phylogeny
 ---
 
+一个简明完整系统发育树构建流程！
+
 <!--more-->
 
 ## 1. 前言
