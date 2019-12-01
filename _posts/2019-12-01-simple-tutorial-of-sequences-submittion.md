@@ -164,6 +164,8 @@ BankIt模板和整理形式如下：
 
 ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/26.png)
 
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/30.png) 
+
 10. 确认上传。如果为二次上传（resubmission），此时需要输入初次上传的上传号。
 
 ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/27.png) 
