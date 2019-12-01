@@ -49,27 +49,27 @@ key: simple-tutorial-of-phylogeny
 
 3. 序列导入以后即可比对，比对前界面如下：
 
-    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/before%20alignment.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}{:.shadow}
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/before%20alignment.png){:.shadow}
 
     然后 Muscle > Align DNA (如为编码序列，可截取完ORF以后，选择Align Codons)，选择默认设置，点击compute即可。比对参数界面：
 
-    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/align%20compute.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}{:.shadow}
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/align%20compute.png){:.shadow}
 
     比对后则如下：
 
-    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/after%20alignment.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}{:.shadow}
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/after%20alignment.png){:.shadow}
 
     >  注：当序列明显无法比对整齐时，可检查是否为反向互补序列。
 
     比对后的序列两段常常不整齐，此比对导致的gap（即-）会部分影响发育树结果，两段大部分截取删除后，少部分gap可用‘‘?’’填充整齐。
 
-    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/alignment%20trim.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}{:.shadow}
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/alignment%20trim.png){:.shadow}
 
 4.  按需保存和导出比对结果。
 
     比对结果的保存优先使用fasta格式，而一般发育树构建软件通常使用nexus格式作为输入文件。Mega支持这两种格式的输出。
 
-    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/export%20of%20alignment.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}{:.shadow}
+    ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/export%20of%20alignment.png){:.shadow}
 
 ### 2.2 碱基替换模型选择
 
@@ -94,19 +94,19 @@ key: simple-tutorial-of-phylogeny
 
 1. 输入文件需要nexus (*.nex)格式，该格式可以由Mega比对完成后生成。首先用PAUP软件读取nexus格式文件。打开PAUP > 选择nexus文件。
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/open%20nexus.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/open%20nexus.png){:.shadow}
 
    
 
 2. 运行模型计算批处理文件。PAUP中 File > open > mrblock.dat 运行自动进行，生成mrmodel.scores文件，该文件通常和mrblock.dat,modelGUI.exe一同位于MrMTGUI文件夹下。
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/mrblock%20complete.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/mrblock%20complete.png){:.shadow}
 
    Mrblock.dat会对24个模型分别计算其得分，得分记录于mrmodel.scores中。
 
 3. 最优模型评价。打开ModelGUI.exe  > 点击右侧select file... > 选择mrmodel.scores文件 > 点击右侧MrModeltest!!!。界面如下：
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/model%20optimal.png){:.shadow}{:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/model%20optimal.png){:.shadow}
 
    不同模型间的比较评价遵循特定的标准，如hLRTs，AIC，AICc，BIC，BF等等。MrModeltest仅支持前两种评价标准，通常选用AIC标准。结果重点解读最优模型及其参数，自动生成的ML，BI的命令模块。
 
@@ -163,21 +163,21 @@ MrModeltest仅在24个模型中选择，Modeltest也不过是48个，这可能�
 
 1. 打开jModeltest，File > Load DNA alignment, 输入数据，此处使用fasta格式。
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20import.png){:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20import.png){:.shadow}
 
 2. 计算模型得分。Analysis > compute likelihood scores > compute likelihood（选择默认参数，如有需要可自行修改），等待计算完成。
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20likelihood%20settings.png){:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20likelihood%20settings.png){:.shadow}
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20progress.png){:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20progress.png){:.shadow}
 
 3. 模型评价。jModeltest支持多种方法评价模型，一般来说BIC优于AIC，然而AIC更为常用。jModeltest 的结果可以保存到HTML格式使用浏览器查看。
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20model%20compare.png){:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20model%20compare.png){:.shadow}
 
    结果可以在result > show results table 中查看，红色标记的即为最优模型。
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20optimal%20model.png){:.shadow}{:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/jmodeltest%20optimal%20model.png){:.shadow}
 
 #### 2.2.3 形态数据的模型选择
 
@@ -225,7 +225,7 @@ MrModeltest仅在24个模型中选择，Modeltest也不过是48个，这可能�
 
 2. PAUP直接打开保存好的nexus文件，就可直接运算。当bootstrap replicates达到预置的重复数时，程序结束。生成log文件和tre文件。
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/paup%20compute.png){:.shadow}{:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-11-17-simple-tutorial-of-phylogeny/paup%20compute.png){:.shadow}
 
 3. 在此，我们涉及到两个概念，nexus文件和外类群，我们对它稍做解释。
 
