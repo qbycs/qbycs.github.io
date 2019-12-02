@@ -100,7 +100,7 @@ key: website-of-plant-taxonomy
 - [The History of Taxonomy]( http://www.bihrmann.com/caudiciforms/div/default.asp ) 公元前2650年到2003年间的全球范围内的植物分类分类学家简史
 - [多识植物百科](http://duocet.ibiodiversity.net) 致力于做中文世界里最权威的植物百科全书
 - [植物分类词典]( https://zhiwufenlei.18dao.cn/ ) 个人创建的中国植物类群列表
-
+- [汪远的博客](http://blog.sina.com.cn/s/blog_86a5ebee010171m9.html) 汪远的植物学资料分享的博客，包括大量的中国各省植物志，中国和世界的植物名录整理以及一些图片资料，值得参考！
 
 
 ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/fengexian.jpg){:height="175.57" width="850"}
