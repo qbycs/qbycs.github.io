@@ -29,11 +29,11 @@ key: formula-based-on-LaTex
 
 我们先来看一个简单的例子，在Typora中输入一下内容：
 
-  ```
+```
 $$
                                   f(x)=(x+1)^2=x^2+2x+1
 $$
-  ```
+```
 
 则可以得到：
 
@@ -95,6 +95,7 @@ $$
 ```
 
 结果如下：
+
 $$
 \Bigg ( \bigg [ \Big \{ \big \langle \left | \| x \| \right | \big \rangle \Big \} \bigg ] \Bigg )
 $$
