@@ -13,6 +13,7 @@ key: longitude-and-latitude-of-image
 
 ## 1. 获取照片和轨迹数据 
 - 轨迹使用[两步路手机APP](http://www.2bulu.com/about/app_download2.htm?id=0)记录，可从手机应用商店下载。
+
 ## 2. 将轨迹的经纬度写入到照片属性
 - 将两步路的KML格式的轨迹转为GPX格式，可使用以下两种方法：
 1. 使用软件[RouteConverter](https://www.routeconverter.com/stable-releases/en)，该软件免安装，可直接使用，使用流程较为简单，打开轨迹后，直接在文件菜单下选择另存为即可。
@@ -31,6 +32,7 @@ key: longitude-and-latitude-of-image
 4. 指定照片轨迹匹配最大时间差，默认5分钟，轨迹记录时间和和照片拍摄时间查过该值则不予匹配，如果匹配效果差可以调大或调小。
 5. 同步，同步速度较慢，需耐心。同步完成后，照片属性则出现经纬度和海拔信息，写入好经纬度信息如下：
 ![image](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-07_09-33-05.jpg?raw=true)
+
 ## 3. 提取图片经纬度属性信息
 ```
 需首先对照片进行重命名，重命名格式为**为物种编号（样方/样线编号+空格+三位数序号）+照片原始编号**
@@ -54,6 +56,7 @@ GPicSync完成后会在原文件夹生成一个doc.kml的记录文件，在该�
 
 - 需从上述文件中，批量提出第二行的文件名和第7行的经纬度信息。
 - 方法如下，将上述描述块粘贴入word中，使用文字转表格功能，列宽为10即可，然后见所需列粘贴入excel中，删除<name>...</name>,<coordinates>...</coordinates>字段。
+
 ## 4. 将每张照片的信息列表缩减为每个采集号的列表
 每个采集号常包含多张照片，此处仅保留每个采集号的首张照片，即可获得每个采集号的采集信息。
 处理方式如下：
