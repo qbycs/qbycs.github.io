@@ -185,6 +185,7 @@ analytics:
 markdown    : kramdown
 highlighter : rouge
 permalink   : date
+mathjax: true
 
 exclude:
   - CHANGELOG.md
