@@ -76,6 +76,7 @@ key: website-of-plant-taxonomy
 - [GBIF plant](https://www.gbif.org/species/search) 世界植物标本库
 - [Jstor Plant](<https://plants.jstor.org/>) 世界植物模式标本索引
 - [NYBG steere Herbarium]( http://sweetgum.nybg.org/science/ih/ ) 标本馆国际通用代码索引
+
 ### 3.2 中国植物标本网站
 
 - [NSII国家标本平台](<http://www.nsii.org.cn/2017/home.php>)
