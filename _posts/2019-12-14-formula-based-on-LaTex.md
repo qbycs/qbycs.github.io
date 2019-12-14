@@ -51,6 +51,17 @@ $$
 
 $$f(x)=a_0+\displaystyle\sum_{n=1}^\infty{\Big (a_n \cos{n\pi x \over L}+b_n\sin {n\pi x \over L}\Big )}$$
 
+一个更为复杂的公式如下：
+```
+$$
+Dir(\vec{p}|\vec{α})= {Γ(\sum_{K=1}^Kα_k) \over Π_{k=1}^KΓ(α_k)} {\displaystyle \prod_{k=1}^K}p_k^{α_k-1}= {1 \over Δ(\vec {α})}\displaystyle \prod_{k=1}^Kp_k^{α_k-1}
+$$
+```
+
+渲染后如下：
+
+$$Dir(\vec{p}|\vec{α})= {Γ(\sum_{K=1}^Kα_k) \over Π_{k=1}^KΓ(α_k)} {\displaystyle \prod_{k=1}^K}p_k^{α_k-1}= {1 \over Δ(\vec {α})}\displaystyle \prod_{k=1}^Kp_k^{α_k-1}$$
+
 文中行内的公式可以如下写作：
 
 ```
