@@ -220,7 +220,7 @@ defaults:
       pageview: true
 
 sitemap:
-  path: sitemap.xml
+  path: sitemap.txt
 
 
 ## => Plugins
