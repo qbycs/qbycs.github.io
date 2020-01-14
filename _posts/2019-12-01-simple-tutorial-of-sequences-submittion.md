@@ -57,20 +57,20 @@ BankIt模板和整理形式如下：
 
 1. 下载几条该类群的近缘类群已经注释的序列，同自己的序列同时比对，就可以获得片段不同分区的起始终止位置。比对完整后，可以将每个分区单独粘贴至Excel中，去换掉比对造成的gap字符“-”，即可使用公式获得片段总长、各分区的起始终止位置。参考图如下：
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/9.png) {:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/9.png){:.shadow}
 2. 上述步骤获取到全长和起始终止位置后，插入统一的注释文字内容后，即可获得如下文件：
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/10.png) {:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/10.png){:.shadow}
 
 3. 转化为Tab分割的文本文件：
-{:.shadow}{:.shadow}
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/11.png) {:.shadow}
+
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/11.png){:.shadow}
 
 4. 此时根据上述文件可以手工排版为NCBI要求的五列格式，但是此部依然是相对易错且繁琐的工作，本文在此尝试提供一个相对快捷的方式，使用R语言脚本实现注释文件的自动生成。但需要在原本的注释文件上加一行说明数据，即在上述的Excel文件中加上首行，说明每列文本在最终5列txt文本中应被放置的列数，然后存为txt格式，执行R代码后（要求对R语言初步了解），即生成所需注释文件。数据准备和预期结果见下图：
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/12.png) {:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/12.png){:.shadow}
 
-   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/13.png) {:.shadow}
+   ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/13.png){:.shadow}
 
 5. R脚本如下：（使用过程你需要适当修改一下关于文件读取和写入相关的路径参数）
 
@@ -122,33 +122,33 @@ BankIt模板和整理形式如下：
 
 1. 打开BankIt网站，登陆账户，准备提交数据。若没有账号，需先注册。  
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/14.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/14.png){:.shadow}
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/15.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/15.png){:.shadow}
 
 2. 开始一个新的提交，输入个人信息。  
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/16.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/16.png){:.shadow}
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/17.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/17.png){:.shadow}
 
 3. 输入参考信息，如序列作者；参考文献作者、题目、是否发表等等。
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/18.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/18.png){:.shadow}
 
 4. 输入测序类型、序列是否为双向测序。（示例为桑格尔测序，单向测序）  
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/19.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/19.png){:.shadow}
 
 5. 输入序列公布日期，序列类型等。同时，开始上传序列数据，建议以文本形式上传。若文件中出现非ANSII编码内容，则会报错。  
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/20.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/20.png){:.shadow}
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/21.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/21.png){:.shadow}
 
 6. 输入所提交序列的研究目的。  
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/22.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/22.png){:.shadow}
 
 7. 输入提交类别。  
 
@@ -156,20 +156,20 @@ BankIt模板和整理形式如下：
 
 8. 上传序列的采集信息。此步亦可省略。  
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/24.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/24.png){:.shadow}
 
 9. 上传序列注释文件。根据可能的报错修改注释文件。 
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/25.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/25.png){:.shadow}
 
 ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/26.png){:.shadow}
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/30.png) {:.shadow}
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/30.png){:.shadow}
 
 10. 确认上传。如果为二次上传（resubmission），此时需要输入初次上传的上传号。
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/27.png) 
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/27.png){:.shadow}
 
 11.   上传完成，注册邮箱会收到提交完成的邮件。如果没有错误，NCBI大约会在1-3个工作日邮件通知你序列号。一般来说，NCBI工作人员仅作格式审查，对于注释内容是否合适翔实通常不做要求。
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/28.png) 
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/28.png){:.shadow} 
