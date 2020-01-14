@@ -40,7 +40,7 @@ BankIt模板和整理形式如下：
 
 将序列的分区、功能、产物等信息写到一个五列的txt文本中，格式如下图。  
 
- ![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/6.png) 
+![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-01-simple-tutorial-of-sequences-submittion/6.png){:.shadow} 
 
 - 注释文件内部内容tab键隔开；
 - 如果分段片段不是全长，请加上“<”、“>”， “<”表示5’端缺失，“>”表示3’端缺失；
