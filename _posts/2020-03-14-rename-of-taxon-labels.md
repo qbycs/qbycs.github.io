@@ -78,9 +78,9 @@ pedunculosaITS	Ficus pedunculosa
 
 ![](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2020-03-14-rename-of-taxon-labels/shuimiao.jpg?raw=true)
 
-1.  点选替换tab
-2.  准备需要替换的分类群名字列表，不同的名字字符串之间使用|隔开
-3.  准备要替换为的名字列表，不同的名字字符串之间同样使用|隔开
-4.  粘贴进需要替换处理的文本
+1. 点选替换tab
+2. 准备需要替换的分类群名字列表，不同的名字字符串之间使用“|”隔开
+3. 准备要替换为的名字列表，不同的名字字符串之间同样使用“|”隔开
+4. 粘贴进需要替换处理的文本
 5. 点击预览一篇
 6. 复制预览结果，粘贴使用
