@@ -83,13 +83,13 @@ $$Dir(\vec{p}|\vec{α})= {Γ(\sum_{K=1}^Kα_k) \over Π_{k=1}^KΓ(α_k)} {\displ
 
 ## 3. 特殊符号总结
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol1.jpg)
+![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol1.jpg)
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol2.jpg)
+![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol2.jpg)
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol3.jpg)
+![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol3.jpg)
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol4.jpg)
+![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-12-07-formula-based-on-LaTex/symbol4.jpg)
 
 > 图片来源见此[博客]( https://blog.csdn.net/caiandyong/article/details/53351737 )。
 
@@ -140,4 +140,4 @@ $$
 - 在公式右键，选择Mostrar Formulas Como>Codigo MathML，复制弹框内容；
 - 将弹框内容以文本方式粘贴到Word 2016中即可。
 
-![](https://raw.githubusercontent.com/qbycs/qbycs.github.io/master/image/blog/2019-12-07-formula-based-on-LaTex/Latextoword.jpg)
+![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-12-07-formula-based-on-LaTex/Latextoword.jpg)

@@ -17,12 +17,12 @@ key: longitude-and-latitude-of-image
 ## 2. 将轨迹的经纬度写入到照片属性
 - 将两步路的KML格式的轨迹转为GPX格式，可使用以下两种方法：
 1. 使用软件[RouteConverter](https://www.routeconverter.com/stable-releases/en)，该软件免安装，可直接使用，使用流程较为简单，打开轨迹后，直接在文件菜单下选择另存为即可。
-![image](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-06_17-50-38.jpg?raw=true)
-![image](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-06_17-49-24.jpg?raw=true)
+![image](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-06_17-50-38.jpg)
+![image](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-06_17-49-24.jpg)
 2. 使用在线网站[kml2gpx](https://kml2gpx.com)直接转换
-![image](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-06_17-52-51.jpg?raw=true)
+![image](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-06_17-52-51.jpg)
 - 通过软件[GPicSync](https://sourceforge.net/projects/gpicsync/)将轨迹中的经纬度和海拔写入到照片属性 
-![image](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-07_09-06-19.jpg?raw=true)
+![image](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-07_09-06-19.jpg)
 1. 选择照片文件夹
 2. 选择轨迹文件
 3. 选择时区补偿，中国为UTC+8。
@@ -31,7 +31,7 @@ key: longitude-and-latitude-of-image
 ```
 4. 指定照片轨迹匹配最大时间差，默认5分钟，轨迹记录时间和和照片拍摄时间查过该值则不予匹配，如果匹配效果差可以调大或调小。
 5. 同步，同步速度较慢，需耐心。同步完成后，照片属性则出现经纬度和海拔信息，写入好经纬度信息如下：
-![image](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-07_09-33-05.jpg?raw=true)
+![image](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2019-10-20-longitude-and-latitude-for-images/snipaste_2019-08-07_09-33-05.jpg)
 
 ## 3. 提取图片经纬度属性信息
 ```

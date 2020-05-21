@@ -25,11 +25,11 @@ key: rename-of-taxon-labels
 
 2. 打开Figtree软件，点击File>Import annotations，选择上述配置文件。操作完后，实际上已经替换，但还未立即显示。
 
-   ![](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2020-03-14-rename-of-taxon-labels/figtree.jpg?raw=true)
+   ![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-03-14-rename-of-taxon-labels/figtree.jpg)
 
 3. 在Figtree软件中，点选Tip Labels>Display>rename，即可显示重命名效果。此处rename和上述准备文件中的第二列首行保持一致，也可自行修改。但遗憾的是，此重命名效果仅限制在Figtree软件内部，无法通过另存导出修改名字后的树文件为其他软件所用。
 
-   ![](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2020-03-14-rename-of-taxon-labels/rename.jpg?raw=true)
+   ![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-03-14-rename-of-taxon-labels/rename.jpg)
 
 ## 2. 在iTOl中重命名
 
@@ -76,7 +76,7 @@ pedunculosaITS	Ficus pedunculosa
 
 水淼软件：[点此下载]( https://github.com/qbycs/qbycs.github.io/blob/master/softwarerepositories/shuimiao.zip )
 
-![](https://github.com/qbycs/qbycs.github.io/blob/master/image/blog/2020-03-14-rename-of-taxon-labels/shuimiao.jpg?raw=true)
+![](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-03-14-rename-of-taxon-labels/shuimiao.jpg)
 
 1. 点选替换tab
 2. 准备需要替换的分类群名字列表，不同的名字字符串之间使用竖杠（半角）隔开
