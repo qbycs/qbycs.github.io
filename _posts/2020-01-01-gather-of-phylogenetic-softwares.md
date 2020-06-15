@@ -1,7 +1,7 @@
 ---
 type: page
 title: 系统发育常见软件与在线工具合集
-tags: 电脑知识
+tags: 系统发育
 mathjax: true
 key: gather-of-phylogenetic-softwares
 ---
