@@ -8,8 +8,7 @@ key: skills-of-windows-computer
 <!--more-->
 ## 1. 电脑软件推荐
 
-
-### 聊天通讯
+######## 聊天通讯
 - [TIM](<https://office.qq.com/>) - QQ的办公版，和QQ账户互通，但相对更加简洁高效，主打办公和文档协作
 - [微信](<https://weixin.qq.com/>) - 国民IM软件
 #### 浏览器
