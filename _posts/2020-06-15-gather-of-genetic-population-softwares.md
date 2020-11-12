@@ -22,14 +22,12 @@ key: gather-of-genetic-population-softwares
 ### 1.2 格式转换
 
 - [PGDSpider]( http://www.cmpg.unibe.ch/software/PGDSpider/ ) 专门的**格式转换软件**，可以在主要的系统发育格式之间转换，**支持格式众多**
-
 - [GenAlex]( https://biology-assets.anu.edu.au/GenAlEx/Welcome.html ) 群体遗传学Excel插件，兼顾格式转换功能
 - DataFormater 针对主流的群体遗传学软件所需的格式进行转化，基于python语言开发
 
 ## 2. 群体遗传学参数统计
 
 - [GenAlex]( https://biology-assets.anu.edu.au/GenAlEx/Welcome.html ) 对常用的群体遗传学参数进行估计
-
 - [Popgene]( https://sites.ualberta.ca/~fyeh/popgene.html ) 常用的群体遗传学参数估计软件
 - [Arlequin]( http://cmpg.unibe.ch/software/arlequin35/ ) 群体遗传结构分析软件，可实现AMOVA分析
 - [PowerMarker]( https://brcwebportal.cos.ncsu.edu/powermarker/ ) 可用于计算微卫星位点的多态性，比如PIC参数，其他功能请见软件和官网
