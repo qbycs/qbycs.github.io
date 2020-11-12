@@ -33,7 +33,7 @@ permalink: /home/personal-information
 
 - ***Zhang, Z.***, Liao, S., Li, H. Q. & Zhang, D.S. 2020. Identifications and typifications of *Ficus pubigera* var. *maliformis* and related names. Phytotaxa. 464(1): 102-108. [点击查看](https://onlinelibrary.wiley.com/doi/full/10.1002/tax.12282)
 
-- Zhang, Z., Wang, X. M., Liao, S., Zhang, J.H. & Li, H. Q., 2020. Phylogenetic reconstruction of *Ficus* subg. *Synoecia* and its allies (Moraceae), with implications on the origin of the climbing habit. Taxon. 69(5): 927-945. [点击查看](https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.464.1.9)
+- ***Zhang, Z.***, Wang, X. M., Liao, S., Zhang, J.H. & Li, H. Q., 2020. Phylogenetic reconstruction of *Ficus* subg. *Synoecia* and its allies (Moraceae), with implications on the origin of the climbing habit. Taxon. 69(5): 927-945. [点击查看](https://www.biotaxa.org/Phytotaxa/article/view/phytotaxa.464.1.9)
 
 - ***Zhang, Z.***, Wang, X. M., Liao, S., Tian, H. Z. & Li, H. Q. 2019. Taxonomic treatment of the *Ficus auriculata* complex (Moraceae) and typification of some related names. Phytotaxa. 399(3): 203-208. [点击查看](https://www.researchgate.net/publication/332030319)
 
