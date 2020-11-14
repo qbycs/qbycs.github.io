@@ -45,31 +45,31 @@ BAPS软件可以在[此处](http://www.helsinki.fi/bsg/software/BAPS/)下载。
 
 打开软件，界面如下：
 
-![begin](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/begin.png)
+![begin](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/begin.png){:.shadow} 
 
 ### 1. 数据预处理
 
 如果你关注的是最为常用的个体非先验遗传归类推断，数据预处理需要使用第一个功能（Clustering of individuals），然后选择BAPS-format，导入数据文件。
 
-![specify data format](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/specify-data-format.png)
+![specify data format](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/specify-data-format.png){:.shadow} 
 
 同时还可指定居群的名字和具体居群的行数索引，根据提示导入对应文件，格式参考示例数据。
 
-![add-name-and-index](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/add-name-and-index.png)
+![add-name-and-index](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/add-name-and-index.png){:.shadow} 
 
 然后保存预处理文件，方便后续使用其他参数重复分析。
 
-![save-proprocessed-data](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/save-proprocessed-data.png)
+![save-proprocessed-data](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/save-proprocessed-data.png){:.shadow} 
 
 ### 2. Mixture分析
 
 之后会提示输入可能的居群数上限（对应 STRUCTURE 中的最大K值），BAPS允许输入多个上限，软件会针对多个上限均进行mixture预分析。建议输入多个上限，且每个上限可重复多次，最大上限的指定原则和STRUCTURE中一致。
 
-![input-maximum-K](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-maximum-K.png)
+![input-maximum-K](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-maximum-K.png){:.shadow} 
 
 然后保存mixture结果。
 
-![save-mixture-result](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/save-mixture-result.png)
+![save-mixture-result](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/save-mixture-result.png){:.shadow} 
 
 ### 3. Admixture分析
 
@@ -79,19 +79,19 @@ BAPS软件可以在[此处](http://www.helsinki.fi/bsg/software/BAPS/)下载。
 - number of iterations，迭代次数，用于估算等位基因频率，运行时间允许的情况下，越大越好，推荐大于100
 - number of reference individuals from each population、number of  iteration for reference individuals，参考个体数量和迭代参数，前者推荐为200，后者可以较小，一般为5---20之间
 
-![input-minimum-size](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-minimum-size.png)
+![input-minimum-size](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-minimum-size.png){:.shadow} 
 
-![input-iteration](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-iteration.png)
+![input-iteration](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-iteration.png){:.shadow} 
 
-![input-number-reference-individuals](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-number-reference-individuals.png)
+![input-number-reference-individuals](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-number-reference-individuals.png){:.shadow} 
 
-![input-interation-of-referecne-individuals](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-interation-of-referecne-individuals.png)
+![input-interation-of-referecne-individuals](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/input-interation-of-referecne-individuals.png){:.shadow} 
 
 输入四个参数后即可等待运行完成，完成后弹出聚类结果窗口和最佳聚类K值。
 
-![running](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/running.png)
+![running](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/running.png){:.shadow} 
 
-![result](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/result.jpg)
+![result](https://qbycs.coding.net/p/qbycs_clone/d/qbycs_clone/git/raw/master/image/blog/2020-11-12-tutorial-of-BAPS/result.jpg){:.shadow} 
 
 ## 3. 结果可视化
 
