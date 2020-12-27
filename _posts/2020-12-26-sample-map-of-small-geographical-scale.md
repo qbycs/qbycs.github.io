@@ -1,7 +1,7 @@
 ---
 type: page
 title: 小地理范围的采集示意图制作方法
-tags: 图标制作
+tags: 图表制作
 key: sample-map-of-small-geographical-scale
 ---
 
